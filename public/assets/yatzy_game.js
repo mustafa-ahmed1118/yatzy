@@ -7,26 +7,26 @@ export default class YatzyGame {
         this.rollCount = 0;
         
         //roll 5 dice
-        this.die = [];
+        this.dice = [];
         for (let i = 0; i < 5; i++) {
             const dice = new Dice();
-            this.die.push(dice);
+            this.dice.push(dice);
         }
     }
 
     //Re-rolling dice
     tossUp() {
-        for (let dice of this.die) {
+        for (let dice of this.dice) {
             dice.roll(); // Roll each dice
         }
         this.rollCount++;
     }
 
-    getDie() {
-        var dieVals = [];
-        for(let dice of this.die){
-            dieVals.push(dice.diceVal);
+    getDice() {
+        var diceVals = [];
+        for(let dice of this.dice){
+            diceVals.push(dice.diceVal);
         }
-        return dieVals;
+        return diceVals;
     }
 }
