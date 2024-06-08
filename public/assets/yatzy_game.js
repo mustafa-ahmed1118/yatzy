@@ -1,18 +1,20 @@
-// yatzy_game.js
 import Dice from "./dice.js";
 
 export default class YatzyGame {
     constructor() {
+
+        //initial roll count
         this.rollCount = 0;
+        
+        //roll 5 dice
         this.die = [];
         for (let i = 0; i < 5; i++) {
             const dice = new Dice();
-            console.log(`Dice ${i + 1} initialized with value: ${dice.diceVal}`); // Debug statement
             this.die.push(dice);
         }
-        console.log("Initial die array:", this.die); // Check the final array
     }
 
+    //Re-rolling dice
     tossUp() {
         for (let dice of this.die) {
             dice.roll(); // Roll each dice
@@ -21,8 +23,10 @@ export default class YatzyGame {
     }
 
     getDie() {
-        for (let dice of this.die) {
-            console.log(dice.diceVal); // Output the value of each dice
+        var dieVals = [];
+        for(let dice of this.die){
+            dieVals.push(dice.diceVal);
         }
+        return dieVals;
     }
 }
