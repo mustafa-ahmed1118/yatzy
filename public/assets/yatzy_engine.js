@@ -7,17 +7,17 @@ updateDisplay();
 function updateDisplay(){    
     
     //Strings to output
-    var dieString = game.getDie().join(',');
+    var diceString = game.getDice().join(',');
     var rollString = "Roll Number: " + game.rollCount;
     
     var diceDisplay = document.getElementById("dice-display"); //gameboard
     var rollNumDisplay = document.getElementById("roll-num-display"); //roll counter
     
     //output to HTML
-    diceDisplay.textContent = dieString;
+    diceDisplay.textContent = diceString;
     rollNumDisplay.textContent = rollString;
 }
- //toss the 5 die
+ //toss the 5 dice
 function tossUp(){
     if(game.rollCount >= 4){
         alert("Total Number of Rolls Acheived")
@@ -30,7 +30,7 @@ function tossUp(){
 
 //Controls
 function handleKeyPress(event) {
-    if (event.keyCode === 32) {//spacebar to toss die
+    if (event.keyCode === 32) {//spacebar to toss dice
         tossUp();
     } 
 }
