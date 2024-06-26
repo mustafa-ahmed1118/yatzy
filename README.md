@@ -1,11 +1,11 @@
-# Lab 4 & 5: Yatzy w/ Markdown
+# Lab 4 & 5 & 6: Yatzy w/ Markdown
 
 Student: Mustafa Ahmed & Justin Wang\
 Student No: 300242013 & 300234186\
 Class: CSI3140\
-Date: June 17, 2024
+Date: June 25, 2024
 
-This is a basic implementation of Yatzy. It rolls 5 dice and tracks the number of rolls.
+This is a basic implementation of Yatzy w/ PHP. It rolls 5 dice and tracks the number of rolls.
 
 ## How to Run:
 
